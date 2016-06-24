@@ -1,0 +1,16 @@
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+// Hold our breakpoint aliases and conditions in a list.
+//
+// These can be invoked later on via the `mq()` mixin used by `sass-mq`
+
+$potato-breakpoints: (
+  lap-and-up: $breakpoint-lap-and-up,
+  desk: $breakpoint-desk
+) !default;
+
+// Pass variables onto `sass-mq`
+$mq-base-font-size: $potato-base-font-size;
+$mq-breakpoints: $potato-breakpoints;

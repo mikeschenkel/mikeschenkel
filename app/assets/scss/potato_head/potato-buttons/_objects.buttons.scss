@@ -1,0 +1,165 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * A simple button object.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$potato-btn-padding:         halve($potato-base-spacing-unit) !default;
+$potato-btn-padding--small:  halve($potato-btn-padding) !default;
+$potato-btn-padding--large:  double($potato-btn-padding) !default;
+$potato-btn-background:      #4a8ec2 !default;
+$potato-btn-color:           #fff !default;
+$potato-btn-border-width:    1px !default;
+$potato-btn-border-style:    solid !default;
+$potato-btn-border-color:    $potato-btn-background !default;
+$potato-btn-radius:          0 !default;
+
+$potato-enable-btn--small:   false !default;
+$potato-enable-btn--large:   false !default;
+$potato-enable-btn--full:    false !default;
+$potato-enable-btn--pill:    false !default;
+
+
+
+
+
+// Here we set a variable assuming that `box-sizing: border-box;` is not set
+// globally. If it has been previously been defined, the following variable will
+// be overriden and will be set to `true`.
+$potato-global-border-box: false !default;
+
+
+
+
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+.o-btn,
+%o-btn {
+
+  display: inline-block; /* [1] */
+  padding: $potato-btn-padding - $potato-btn-border-width  double($potato-btn-padding) - $potato-btn-border-width; /* [7] */
+  margin:  0; /* [4] */
+  overflow: visible; /* [6] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  vertical-align: middle; /* [2] */
+  cursor: pointer; /* [5] */
+  background-color: $potato-btn-background;
+
+  @if($potato-btn-border-width != 0) {
+    border: $potato-btn-border-width $potato-btn-border-style $potato-btn-border-color;
+  } @else {
+    border: 0; /* [4] */
+  }
+
+  @if($potato-btn-radius != 0) {
+    border-radius: $potato-btn-radius;
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $potato-btn-color;
+    text-decoration: none; /* [4] */
+  }
+
+}
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+.o-btn::-moz-focus-inner,
+%o-btn::-moz-focus-inner {
+  padding: 0;
+  border:  0;
+}
+
+
+
+
+
+@if ($potato-enable-btn--small == true) {
+
+  /**
+   * Small buttons.
+   */
+
+  .o-btn--small,
+  %o-btn--small {
+    padding: $potato-btn-padding--small - $potato-btn-border-width  double($potato-btn-padding--small) - $potato-btn-border-width; /* [7] */
+  }
+
+}
+
+@if ($potato-enable-btn--large == true) {
+
+  /**
+   * Large buttons.
+   */
+
+  .o-btn--large,
+  %o-btn--large {
+    padding: $potato-btn-padding--large - $potato-btn-border-width  double($potato-btn-padding--large) - $potato-btn-border-width; /* [7] */
+  }
+
+}
+
+
+
+
+
+@if ($potato-enable-btn--full == true) {
+
+  /**
+   * Full-width buttons.
+   */
+
+  .o-btn--full,
+  %o-btn--full {
+    width: 100%;
+
+    @if $potato-global-border-box == false {
+      /**
+       * Remove paddings so that widths and paddings donâ€™t conflict.
+       */
+      padding-right: 0;
+      padding-left:  0;
+    }
+
+  }
+
+}
+
+
+
+
+
+@if ($potato-enable-btn--pill == true) {
+
+  /**
+   * Round-ended buttons.
+   *
+   * 1. Overly-large value to ensure the radius rounds the whole end of the
+   *    button.
+   */
+
+  .o-btn--pill,
+  %o-btn--pill {
+    border-radius: 100px; /* [1] */
+  }
+
+}

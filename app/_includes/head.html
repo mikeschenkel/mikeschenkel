@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<title>{% if page.title %}{{ page.title | escape }} - Mike Schenkel{% else %}{{ site.title | escape }}{% endif %}</title>
+
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="author" content="Mike Schenkel">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+<link rel="stylehsheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+</head>
+<body>

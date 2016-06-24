@@ -1,0 +1,36 @@
+/*------------------------------------*\
+  #SECTIONS
+\*------------------------------------*/
+
+.o-section {
+  padding: $spacing-unit--large 0;
+  border-bottom: 1px solid $color-white-gray;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.o-section--portfolio {
+  padding-bottom: 0;
+}
+
+.o-section--single {
+  padding-top: $spacing-unit;
+
+  @include mq(lap-and-up) {
+    padding-top: 0;
+  }
+}
+
+.o-section__heading {
+  @include mq(desk) {
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+  }
+}

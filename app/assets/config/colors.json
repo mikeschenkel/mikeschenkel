@@ -1,0 +1,18 @@
+{
+  "color": {
+    "white": "#fff",
+    "white-gray": "#eaeaea",
+    "gray": "#333",
+    "gray-light": "#ccc",
+    "black": "#000",
+    "blue": "#3d5265",
+    "greenn": "#49AB77",
+    "green": "#00a95c",
+    "pink": "#e9506e",
+    "brand": "$color-green"
+  },
+  "base": {
+    "text-color": "$color-gray",
+    "background-color": "$color-blue"
+  }
+}

@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+
+html {
+  font-family: $font-body;
+  // background-color: $color-blue;
+  // background-color: #e9e9e9;
+  // background-color: #ddd;
+  // background-color: $color-white;
+  background-color: #fdfdfd;
+}
+
+main {
+  @include mq(lap-and-up) {
+    padding-top: $spacing-unit;
+  }
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-brand;
+}

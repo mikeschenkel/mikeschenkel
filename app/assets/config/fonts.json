@@ -1,0 +1,36 @@
+{
+  "font": {
+    "arial": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+    "helvetica": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "lucidagrande": "\"Lucida Grande\", \"Lucida Sans Unicode\", \"Lucida Sans\", Geneva, Verdana, sans-serif",
+    "trebuchet": "\"Trebuchet MS\", \"Lucida Grande\", \"Lucida Sans Unicode\", \"Lucida Sans\", Tahoma, sans-serif",
+    "verdana": "Verdana, Geneva, sans-serif",
+
+    "baskerville": "Baskerville, \"Baskerville Old Face\", \"Hoefler Text\", Garamond, \"Times New Roman\", serif",
+    "georgia": "Georgia, Times, \"Times New Roman\", serif",
+    "lucidabright": "\"Lucida Bright\", Georgia, serif",
+    "times": "TimesNewRoman, \"Times New Roman\", Times, Baskerville, Georgia, serif",
+
+    "consolas": "Consolas, monaco, monospace",
+    "courier": "\"Courier New\", Courier, \"Lucida Sans Typewriter\", \"Lucida Typewriter\", monospace",
+    "monaco": "Monaco, Consolas, \"Lucida Console\", monospace",
+
+    "lato": "Lato, sans-serif",
+
+    "base":               "$font-lato",
+    "body":               "$font-lato",
+    "headings":           "$font-lato"
+  },
+  "base": {
+    "font-size":          "18px",
+    "line-height":        "30px"
+  },
+  "heading": {
+    "size-1":             "33px",
+    "size-2":             "30px",
+    "size-3":             "24px",
+    "size-4":             "20px",
+    "size-5":             "16px",
+    "size-6":             "14px"
+  }
+}

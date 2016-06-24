@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #WRAPPERS
+\*------------------------------------*/
+
+.o-wrapper {
+  max-width: $breakpoint-desk-wide;
+  padding-right: $spacing-unit--small;
+  padding-left:  $spacing-unit--small;
+  margin: 0 auto;
+
+  @include mq(lap-and-up) {
+    padding-right: ($spacing-unit--large * 1.3);
+    padding-left: ($spacing-unit--large * 1.3);
+  }
+}

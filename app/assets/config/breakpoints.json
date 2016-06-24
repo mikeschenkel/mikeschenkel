@@ -1,0 +1,17 @@
+{
+  "breakpoint": {
+
+    "palm": "719px",
+
+    "lap": {
+      "min": "720px",
+      "max": "1023px",
+      "and-up": "$breakpoint-lap-min"
+    },
+
+    "portable": "$breakpoint-lap-max",
+
+    "desk": "1024px",
+    "desk-wide": "1200px"
+  }
+}

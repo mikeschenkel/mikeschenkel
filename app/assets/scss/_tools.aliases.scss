@@ -1,0 +1,13 @@
+///*------------------------------------*\
+//  #ALIASES
+//\*------------------------------------*/
+
+$spacing-unit:         $potato-base-spacing-unit;
+$spacing-unit--tiny:   $potato-base-spacing-unit--tiny;
+$spacing-unit--small:  $potato-base-spacing-unit--small;
+$spacing-unit--large:  $potato-base-spacing-unit--large;
+$spacing-unit--huge:   $potato-base-spacing-unit--huge;
+
+@mixin font-size($args...) {
+  @include potato-font-size($args...);
+}

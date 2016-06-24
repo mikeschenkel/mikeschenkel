@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  #PORTFOLIO-LIST
+\*------------------------------------*/
+
+.c-portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  // flex-wrap: wrap;
+  flex-flow: row wrap;
+
+  @include mq(lap-and-up) {
+    margin-top: $spacing-unit;
+  }
+
+  @include mq(alpha) {
+    margin-top: 0;
+  }
+}
+
+.c-portfolio-list__item {
+  margin-bottom: $spacing-unit--large;
+
+  &:hover .c-portfolio-list__img {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba($color-black, 0.2);
+    transition: 0.1s ease-in-out;
+  }
+}
+
+.c-portfolio-list__caption {
+  @include font-size(15px);
+  text-align: center;
+}
+
+.c-portfolio-list__img {
+  max-width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid rgba($color-black, 0.05);
+  border-radius: 5px;
+
+  @include mq(lap-and-up) {
+    width: 300px;
+    height: 175px;
+  }
+}

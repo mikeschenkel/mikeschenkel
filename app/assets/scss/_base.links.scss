@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
+
+a[href]:not([class]) {
+  color: $color-brand;
+  text-decoration: none;
+
+  @include attention() {
+    text-decoration: underline;
+  }
+}

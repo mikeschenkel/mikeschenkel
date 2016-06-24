@@ -1,0 +1,24 @@
+# Site settings
+title: Mike Schenkel
+email: hallo@mikeschenkel.nl
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mikeschenkel.nl" # the base hostname & protocol for your site
+twitter: https://twitter.com/mikeschenkel
+github: https://github.com/mikeschenkel
+linkedin: https://www.linkedin.com/in/mikeschenkel/nl
+
+# Build settings
+markdown: kramdown
+source: app/
+exclude:
+  - assets/config/
+  - assets/scss/
+  - assets/js/
+
+collections:
+  portfolio:
+    output: true

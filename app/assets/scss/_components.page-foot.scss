@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #PAGE-FOOT
+\*------------------------------------*/
+
+.c-page-foot {
+  display: flex;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  border-top: 1px solid $color-white-gray;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,29 @@
+///*------------------------------------*\
+//    #DEFAULTS
+//\*------------------------------------*/
+
+// These variables are Potato Head’s defaults; they should not be modified or
+// adjusted directly; you should predefine the variables in your own project.
+
+
+
+
+
+// High-level base settings.
+$potato-base-font-size:              16px !default;
+$potato-base-line-height:            24px !default;
+$potato-base-text-color:             #333 !default;
+$potato-base-background-color:       #fff !default;
+
+
+
+
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$potato-base-spacing-unit:           $potato-base-line-height;
+$potato-base-spacing-unit--tiny:     round($potato-base-spacing-unit / 4);
+$potato-base-spacing-unit--small:    round($potato-base-spacing-unit / 2);
+$potato-base-spacing-unit--large:    round($potato-base-spacing-unit * 2);
+$potato-base-spacing-unit--huge:     round($potato-base-spacing-unit * 4);
